@@ -1,87 +1,17 @@
 const menuToggle = document.querySelector("#menuToggle");
 const navLinks = document.querySelector("#navLinks");
 const navItems = document.querySelectorAll(".nav-links a");
-const accordions = document.querySelectorAll(".accordion-trigger");
-const filterButtons = document.querySelectorAll(".filter-button");
-const galleryCards = document.querySelectorAll(".gallery-card");
-const modal = document.querySelector("#imageModal");
-const modalTitle = document.querySelector("#modalTitle");
-const modalDescription = document.querySelector("#modalDescription");
-const modalImageLabel = document.querySelector("#modalImageLabel");
-const closeModalButtons = document.querySelectorAll("[data-close-modal]");
-const contactForm = document.querySelector("#contactForm");
-const formResponse = document.querySelector("#formResponse");
 
 menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("open");
   navLinks.classList.toggle("open");
 });
 
-navItems.forEach((item) => {
-  item.addEventListener("click", () => {
+navItems.forEach((link) => {
+  link.addEventListener("click", () => {
     menuToggle.classList.remove("open");
     navLinks.classList.remove("open");
   });
-});
-
-accordions.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    const panel = trigger.nextElementSibling;
-    const isOpen = trigger.classList.contains("open");
-
-    trigger.classList.toggle("open", !isOpen);
-
-    if (isOpen) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-});
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-
-    galleryCards.forEach((card) => {
-      const matches = filter === "all" || card.dataset.category === filter;
-      card.classList.toggle("hidden", !matches);
-    });
-  });
-});
-
-galleryCards.forEach((card) => {
-  card.addEventListener("click", () => {
-    modalTitle.textContent = card.dataset.title;
-    modalDescription.textContent = card.dataset.description;
-    modalImageLabel.textContent = card.dataset.title;
-    modal.classList.add("open");
-    modal.setAttribute("aria-hidden", "false");
-  });
-});
-
-closeModalButtons.forEach((button) => {
-  button.addEventListener("click", closeModal);
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeModal();
-  }
-});
-
-function closeModal() {
-  modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
-}
-
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  formResponse.classList.add("visible");
-  contactForm.reset();
 });
 
 const revealObserver = new IntersectionObserver(
@@ -93,9 +23,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.14
-  }
+  { threshold: 0.14 }
 );
 
 document.querySelectorAll(".reveal").forEach((element) => {
@@ -109,8 +37,8 @@ const sectionObserver = new IntersectionObserver(
 
       const id = entry.target.getAttribute("id");
 
-      navItems.forEach((item) => {
-        item.classList.toggle("active", item.getAttribute("href") === `#${id}`);
+      navItems.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
       });
     });
   },
@@ -122,4 +50,58 @@ const sectionObserver = new IntersectionObserver(
 
 document.querySelectorAll("main section[id]").forEach((section) => {
   sectionObserver.observe(section);
+});
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryCards = document.querySelectorAll(".gallery-card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    galleryCards.forEach((card) => {
+      const shouldShow = filter === "all" || card.dataset.category === filter;
+      card.classList.toggle("hidden", !shouldShow);
+    });
+  });
+});
+
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabPanels = document.querySelectorAll(".tab-panel");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const tab = button.dataset.tab;
+
+    tabButtons.forEach((btn) => btn.classList.remove("active"));
+    tabPanels.forEach((panel) => panel.classList.remove("active"));
+
+    button.classList.add("active");
+    document.querySelector(`#${tab}`).classList.add("active");
+  });
+});
+
+const bioToggle = document.querySelector("#bioToggle");
+const bioMore = document.querySelector("#bioMore");
+
+bioToggle.addEventListener("click", () => {
+  bioMore.classList.toggle("open");
+
+  if (bioMore.classList.contains("open")) {
+    bioToggle.textContent = "Show less";
+  } else {
+    bioToggle.textContent = "Read full bio";
+  }
+});
+
+const contactForm = document.querySelector("#contactForm");
+const formMessage = document.querySelector("#formMessage");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  formMessage.classList.add("visible");
+  contactForm.reset();
 });

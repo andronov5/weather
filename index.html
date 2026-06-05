@@ -3,606 +3,523 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Outreach | Teaching our community</title>
+  <title>Weather Outreach | Teaching Our Community</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#welcome" class="brand">
-        <span class="brand-mark">☁</span>
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <span class="logo-icon">☁</span>
         <span>
           <strong>Weather Outreach</strong>
           <small>Teaching our community</small>
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <div class="nav-links" id="navLinks">
-        <a href="#welcome">Welcome!</a>
-        <a href="#lessons">Weather Lessons</a>
-        <a href="#climate-news">Climate in the News</a>
-        <a href="#photography">Weather Photography</a>
-        <a href="#kids">Web Weather For Kids</a>
-        <a href="#forecast">Make your own weather forecast</a>
-        <a href="#comedy">Weather Comedy</a>
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#photography">Photography</a>
+        <a href="#resources">Resources</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section id="welcome" class="hero section">
-      <div class="weather-orb orb-one"></div>
-      <div class="weather-orb orb-two"></div>
-
-      <div class="hero-copy reveal">
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
         <p class="eyebrow">Weather Outreach</p>
-        <h1>This site is under the weather… stay tuned.</h1>
+        <h1>Explore weather, climate, and the atmosphere.</h1>
         <p class="hero-text">
-          In the meantime, check out my weather photography and stand up comedy set.
+          Weather Outreach shares approachable weather education, climate resources,
+          photography, and public science communication for communities, classrooms,
+          and curious learners.
         </p>
 
         <div class="hero-actions">
-          <a href="#photography" class="button primary">Weather Photography</a>
-          <a href="#comedy" class="button secondary">Weather Comedy</a>
+          <a href="#resources" class="btn primary">Explore Resources</a>
+          <a href="#photography" class="btn secondary">View Photography</a>
         </div>
       </div>
 
-      <aside class="profile-card reveal">
-        <div class="profile-image image-placeholder">
-          <span>Image</span>
+      <div class="hero-card reveal">
+        <div class="hero-photo placeholder">
+          <span>Weather Image</span>
         </div>
-        <p class="card-label">About Me</p>
-        <h2>Lis Cohen, MS, MPA</h2>
-        <p>Meteorologist</p>
-        <a href="mailto:weatheroutreach@gmail.com">weatheroutreach@gmail.com</a>
-      </aside>
-    </section>
 
-    <section id="lessons" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Weather Lessons</h2>
-      </div>
-
-      <div class="lesson-grid">
-        <article class="media-card reveal">
-          <div class="image-placeholder"><span>Lenticular cloud video</span></div>
-          <p>Lenticular cloud video</p>
-          <h3>Lenticular Cloud</h3>
-        </article>
-
-        <article class="media-card reveal">
-          <div class="image-placeholder"><span>Glory</span></div>
-          <p>Glory (rainbow from plane) and cloud shadows</p>
-          <h3>Glory</h3>
-        </article>
-
-        <article class="media-card reveal">
-          <div class="image-placeholder"><span>Air Pressure</span></div>
-          <p>Air Pressure effects 1.23.3.25</p>
-          <h3>Air Pressure</h3>
-        </article>
-
-        <article class="media-card reveal">
-          <div class="image-placeholder"><span>Dry air</span></div>
-          <p>dry-air-inside-and-condensation</p>
-          <h3>Dry air</h3>
-        </article>
-      </div>
-
-      <div class="split-layout">
-        <div class="info-panel reveal">
-          <h3>Radio Interviews- Podcasts</h3>
+        <div class="hero-profile">
+          <p class="eyebrow">Meteorologist</p>
+          <h2>Lis Cohen, MS, MPA</h2>
           <p>
-            Climate change interview Lis on KCPW. This is a radio interview on Hurricanes from KCPW in Salt Lake City This radio interview was about wildfires and snow.
+            Helping communities understand weather, climate, resilience, and science.
           </p>
-        </div>
-
-        <div class="info-panel reveal">
-          <h3>Teaching Materials</h3>
-          <div class="resource-list">
-            <a href="#">A Quick Introduction to Clouds <span>Download</span></a>
-            <a href="#">Cloud_Monsoon_Research_In_Australia <span>Download</span></a>
-            <a href="#">Climate_change_review <span>Download</span></a>
-            <a href="#">The Day After Tomorrow <span>Download</span></a>
-            <a href="#">Australian Animal Adaptations and Biodiversity <span>Download</span></a>
-            <a href="#">WeatherForecastingLisCohen <span>Download</span></a>
-          </div>
+          <a href="mailto:weatheroutreach@gmail.com">weatheroutreach@gmail.com</a>
         </div>
       </div>
     </section>
 
-    <section id="climate-news" class="section soft-section">
+    <section id="explore" class="section">
       <div class="section-heading reveal">
-        <p class="eyebrow">Climate</p>
-        <h2>Climate in the News</h2>
-      </div>
-
-      <div class="accordion reveal">
-        <button class="accordion-trigger">Policy</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://thehill.com/policy/energy-environment/590501-bipartisan-lawmakers-announce-climate-adaptation-bill/" target="_blank">Bipartisan lawmakers announce climate adaptation bill</a> – The Hill (1/20/22)</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Business</button>
-        <div class="accordion-panel">
-          <ul>
-            <li>
-              <a href="https://www.eco-business.com/news/severe-climate-risk-threatens-40-per-cent-of-global-fossil-reserves/" target="_blank">Severe climate risk threatens 40 per cent of global fossil reserves</a> –
-              <ul>
-                <li>“Nearly half of the world’s fossil fuel reserves are vulnerable to extreme weather brought on by climate change, according to an assessment published last month by risk consultancy Verisk Maplecroft.”</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Global Impacts</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.washingtonpost.com/climate-environment/2021/10/11/85-percent-population-climate-impacts/" target="_blank">At least 85 percent of the world’s population has been affected by human-induced climate change, new study shows</a> – Washington Post (10/11/21)</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Health</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.climatecentral.org/climate-matters/climate-change-is-threatening-air-quality-across-the-country" target="_blank">Climate Change is Threatening Air Quality across the Country</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="equity" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather / Climate</p>
-        <h2>Weather/Climate Vulnerability and Equity</h2>
-      </div>
-
-      <div class="feature-panel reveal">
+        <p class="eyebrow">Start Here</p>
+        <h2>What you’ll find</h2>
         <p>
-          I am teaching courses now at Texas Tech University and have found several interesting journal articles, YouTube videos and publications on this topic. As I come across them, I decided to share them with my friends and colleagues and the public here. Let me know what you think of them.
+          Browse educational lessons, climate resources, weather tools, photography,
+          and creative science communication.
         </p>
       </div>
 
-      <div class="card-grid two">
-        <article class="text-card reveal">
-          <h3>News Articles about Climate and Justice</h3>
-          <h4>Income</h4>
-          <ul>
-            <li><a href="#">NPR Investigation: Low-Income Urban Areas Are Often Hotter Than Wealthy Ones : NPR</a></li>
-          </ul>
-
-          <h4>Age</h4>
-          <ul>
-            <li><a href="#">New Research: Older Adults More Vulnerable after Disasters</a></li>
-            <li><a href="#">Environmental Justice – John Oliver (for adults)</a></li>
-          </ul>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="card-icon">🌦️</span>
+          <h3>Weather Lessons</h3>
+          <p>
+            Lenticular clouds, glories, air pressure, dry air, condensation,
+            radio interviews, podcasts, and teaching materials.
+          </p>
+          <a href="#resources">View lessons</a>
         </article>
 
-        <article class="text-card reveal">
-          <h3>Peer Reviewed Articles about Climate and Inequality</h3>
-          <ul>
-            <li>
-              <a href="#">Stop blaming the climate for disasters</a> Nature – (1/10/22)
+        <article class="feature-card reveal">
+          <span class="card-icon">📷</span>
+          <h3>Weather Photography</h3>
+          <p>
+            Halos, rainbows, sunsets, auroras, thunderstorms, cumulus clouds,
+            and cirrus clouds photographed by Lis Cohen.
+          </p>
+          <a href="#photography">View gallery</a>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="card-icon">🌎</span>
+          <h3>Climate Resources</h3>
+          <p>
+            Climate in the news, vulnerability, equity, community resilience,
+            and climate impacts data tools.
+          </p>
+          <a href="#resources">Browse climate tools</a>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="card-icon">🧭</span>
+          <h3>Forecasting Tools</h3>
+          <p>
+            Helpful links and tips for making a simple weather forecast using
+            observations, radar, satellite imagery, upper-air data, and models.
+          </p>
+          <a href="#forecasting">Make a forecast</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="photography" class="section photo-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Weather Photography</p>
+        <h2>Atmospheric moments, captured in the sky</h2>
+        <p>
+          All photos are taken by Lis Cohen. Photos should not be used unless you
+          get permission — email
+          <a href="mailto:weatheroutreach@gmail.com">weatheroutreach@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="notice-card reveal">
+        <p>
+          The photos below are samples of a large collection of photos. Select a
+          category to explore different kinds of weather and sky phenomena.
+        </p>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="halos">Halos</button>
+        <button class="filter-btn" data-filter="rainbows">Rainbows</button>
+        <button class="filter-btn" data-filter="sunsets">Sunsets</button>
+        <button class="filter-btn" data-filter="auroras">Auroras</button>
+        <button class="filter-btn" data-filter="clouds">Clouds</button>
+        <button class="filter-btn" data-filter="storms">Storms</button>
+      </div>
+
+      <div class="gallery">
+        <article class="gallery-card reveal" data-category="halos">
+          <div class="photo-visual placeholder"><span>Halos</span></div>
+          <div>
+            <h3>Halos</h3>
+            <p>
+              Halos are formed when light refracts in ice crystals in cirrus clouds.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="rainbows">
+          <div class="photo-visual placeholder"><span>Rainbows</span></div>
+          <div>
+            <h3>Rainbows</h3>
+            <p>
+              Rainbows form when light is refracted, or bent, through raindrops.
+              The interior of the rainbow is bright, whereas the outside of the
+              main rainbow is dark.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="sunsets">
+          <div class="photo-visual placeholder"><span>Sunsets</span></div>
+          <div>
+            <h3>Sunsets</h3>
+            <p>
+              Sunsets are stunning because of the way low sunlight is scattered
+              through the thicker lower atmosphere. As white sunlight shines, the
+              purples, blues, and greens are scattered away, leaving more reds to
+              light up the sky.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="auroras">
+          <div class="photo-visual placeholder"><span>Auroras</span></div>
+          <div>
+            <h3>Auroras</h3>
+            <p>
+              Auroras occur when highly charged particles from the sun interact
+              with the air molecules at the top of our atmosphere.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="halos">
+          <div class="photo-visual placeholder"><span>Halo</span></div>
+          <div>
+            <h3>Best halo I’ve ever seen</h3>
+            <p>
+              Circumpolar arc, full halo, and sun dogs.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="storms">
+          <div class="photo-visual placeholder"><span>Thunderstorms</span></div>
+          <div>
+            <h3>Thunderstorms</h3>
+            <p>
+              A collection of storm photography showing dramatic weather in action.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="clouds">
+          <div class="photo-visual placeholder"><span>Cumulus</span></div>
+          <div>
+            <h3>Cumulus</h3>
+            <p>
+              Cumulus clouds captured in changing light, texture, and sky conditions.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal" data-category="clouds">
+          <div class="photo-visual placeholder"><span>Cirrus</span></div>
+          <div>
+            <h3>Cirrus</h3>
+            <p>
+              High, wispy cirrus clouds often connected to ice crystals and optical effects.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Learning Center</p>
+        <h2>Weather and climate resources</h2>
+        <p>
+          Educational materials, climate links, forecasting tools, and resources
+          for kids and educators.
+        </p>
+      </div>
+
+      <div class="tabs reveal">
+        <button class="tab-btn active" data-tab="lessons">Lessons</button>
+        <button class="tab-btn" data-tab="kids">Kids</button>
+        <button class="tab-btn" data-tab="climate">Climate</button>
+        <button class="tab-btn" data-tab="tools">Data Tools</button>
+        <button class="tab-btn" data-tab="forecasting">Forecasting</button>
+      </div>
+
+      <div class="tab-panels">
+        <section class="tab-panel active" id="lessons">
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Weather Lessons</h3>
               <ul>
-                <li>“Disasters occur when hazards meet vulnerability. We must acknowledge the human-made components of both vulnerability and hazard and emphasize human agency in order to proactively reduce disaster impacts.“</li>
+                <li>Lenticular Cloud</li>
+                <li>Glory: rainbow from plane and cloud shadows</li>
+                <li>Air Pressure Effects</li>
+                <li>Dry Air Inside and Condensation</li>
               </ul>
-            </li>
-            <li>
-              <a href="#">EPA Report Shows Disproportionate Impacts of Climate Change on Socially Vulnerable Populations in the United States</a> – EPA (Sept 2, 2021)
+            </article>
+
+            <article class="resource-card">
+              <h3>Teaching Materials</h3>
               <ul>
-                <li>“A new EPA analysis released today shows that the most severe harms from climate change fall disproportionately upon underserved communities who are least able to prepare for, and recover from, heat waves, poor air quality, flooding, and other impacts.”</li>
+                <li>A Quick Introduction to Clouds</li>
+                <li>Cloud Monsoon Research in Australia</li>
+                <li>Climate Change Review</li>
+                <li>The Day After Tomorrow</li>
+                <li>Australian Animal Adaptations and Biodiversity</li>
+                <li>Weather Forecasting — Lis Cohen</li>
               </ul>
-            </li>
-            <li><a href="#">Widespread Race and Class Disparities in Surface Urban Heat Extremes Across the United States</a></li>
-          </ul>
-        </article>
-      </div>
-    </section>
+            </article>
 
-    <section id="tools" class="section soft-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Climate</p>
-        <h2>Climate Impacts Data and Tools</h2>
-      </div>
+            <article class="resource-card">
+              <h3>Radio Interviews & Podcasts</h3>
+              <p>
+                Climate change interview with Lis on KCPW, a radio interview on
+                hurricanes from KCPW in Salt Lake City, and a radio interview about
+                wildfires and snow.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <div class="feature-panel reveal">
-        <p>Here are some interactive tools/maps to analyze risks from weather and climate phenomena.</p>
-      </div>
-
-      <div class="accordion reveal">
-        <button class="accordion-trigger">General Risk</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://hazards.fema.gov/nri/map" target="_blank">FEMA National Risk Index- Loss, Vulnerability, and Community Resilience Map</a> -Note: for weather related risks – use right hand side call-out box, then scroll down for particular natural hazard risk, map out risk index</li>
-            <li>National Risk Index FEMA – <a href="https://www.fema.gov/sites/default/files/documents/fema_national-risk-index_technical-documentation.pdf" target="_blank">Technical Documentation</a> – https://www.fema.gov/sites/default/files/documents/fema_national-risk-index_technical-documentation.pdf</li>
-            <li>Hazard Training Vulnerability Preparedness – Emergency Management Training <a href="https://training.fema.gov/HiEdu/docs/fem/Chapter%206%20-%20Hazard%20Vulnerability%20and%20Risk%20Analysis.doc" target="_blank">https://training.fema.gov/HiEdu/docs/fem/Chapter%206%20-%20Hazard%20Vulnerability%20and%20Risk%20Analysis.doc</a></li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Social Vulnerability</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://artsandsciences.sc.edu/geog/hvri/sovi%C2%AE-0" target="_blank">Social Vulnerability Index for the United States (SoVI)</a> <a href="https://experience.arcgis.com/experience/376770c1113943b6b5f6b58ff1c2fb5c/page/page_6/" target="_blank">https://experience.arcgis.com/experience/376770c1113943b6b5f6b58ff1c2fb5c/page/page_6/</a></li>
-            <li><a href="https://www.iwr.usace.army.mil/" target="_blank">Social Vulnerability Analysis: A Comparison of tools</a> USACE</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Aquatic Systems</button>
-        <div class="accordion-panel">
-          <ul>
-            <li>Interactive tools for – <a href="https://emlab-ucsb.shinyapps.io/" target="_blank">climate-adaptive fisheries management</a> – em Lab UC Santa Barbara</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Business</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.maplecroft.com/" target="_blank">Climate Change Vulnerability Index – Where will your business face the greatest threats from climate change?</a> – Verisk Maplecroft Figure</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Heat</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://maps.esri.com/jg/HeatVulnerability/index.html" target="_blank">Heat Vulnerability Index – ESR</a> I https://maps.esri.com/jg/HeatVulnerability/index.html</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Flooding</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.iwr.usace.army.mil/" target="_blank">Social Vulnerability Analysis: A Comparison of tools</a> USACE – water resources</li>
-            <li><a href="https://livingatlas.arcgis.com/" target="_blank">Flood risk mapping – ArcGis –</a> <a href="https://www.arcgis.com/" target="_blank">Social infrastructure</a>, Critical Infrastructure, commercial properties, etc</li>
-            <li><a href="https://coast.noaa.gov/slr/" target="_blank">Sea Level Rise Viewer – NOAA</a> – map vulnerability and sea level rise simultaneously around the U.S.</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Tribal Climate Tool</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://climate.northwestknowledge.net/NWTOOLBOX/tribalProjections.php" target="_blank">https://climate.northwestknowledge.net/NWTOOLBOX/tribalProjections.php</a></li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Health and Vulnerability tool</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.calhospitalprepare.org/post/hazard-vulnerability-analysis-tool" target="_blank">https://www.calhospitalprepare.org/post/hazard-vulnerability-analysis-tool</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="photography" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Weather Photography</h2>
-      </div>
-
-      <div class="feature-panel reveal">
-        <p>All photos are taken by Lis Cohen. Photos should not be used unless you get permission – email weatheroutreach@gmail.com.</p>
-        <p>The photos below are samples of a large collection of photos. If you want to see more of a certain type of photo, click on the photo for more.</p>
-      </div>
-
-      <div class="filter-bar reveal">
-        <button class="filter-button active" data-filter="all">All</button>
-        <button class="filter-button" data-filter="halos">Halos</button>
-        <button class="filter-button" data-filter="rainbows">Rainbows</button>
-        <button class="filter-button" data-filter="sunsets">Sunsets</button>
-        <button class="filter-button" data-filter="auroras">Auroras</button>
-        <button class="filter-button" data-filter="thunderstorms">Thunderstorms</button>
-        <button class="filter-button" data-filter="cumulus">Cumulus</button>
-        <button class="filter-button" data-filter="cirrus">Cirrus</button>
-      </div>
-
-      <div class="gallery-grid reveal" id="galleryGrid">
-        <article class="gallery-card" data-category="halos" data-title="Halos" data-description="Halos are formed when light refracts in ice crystals in cirrus clouds.">
-          <div class="image-placeholder"><span>Halos</span></div>
-          <h3>Halos</h3>
-          <p>Halos are formed when light refracts in ice crystals in cirrus clouds.</p>
-        </article>
-
-        <article class="gallery-card" data-category="rainbows" data-title="Rainbows" data-description="Rainbows form when light is refracted (or bent) through raindrops. The interior of the rainbow is bright, whereas the outside of the main rainbow is dark.">
-          <div class="image-placeholder"><span>Rainbows</span></div>
-          <h3>Rainbows</h3>
-          <p>Rainbows form when light is refracted (or bent) through raindrops. The interior of the rainbow is bright, whereas the outside of the main rainbow is dark.</p>
-        </article>
-
-        <article class="gallery-card" data-category="sunsets" data-title="Sunsets" data-description="Sunsets are stunning because of the way the low sunlight is scattered through the thicker lower atmosphere. As white sunlight shines, the purples, blues and greens are scattered away, leaving more reds to light up the sky.">
-          <div class="image-placeholder"><span>Sunsets</span></div>
-          <h3>Sunsets</h3>
-          <p>Sunsets are stunning because of the way the low sunlight is scattered through the thicker lower atmosphere. As white sunlight shines, the purples, blues and greens are scattered away, leaving more reds to light up the sky.</p>
-        </article>
-
-        <article class="gallery-card" data-category="auroras" data-title="Auroras" data-description="Auroras occur when highly charged particles from the sun interact with the air molecules at the top of our atmosphere.">
-          <div class="image-placeholder"><span>Auroras</span></div>
-          <h3>Auroras</h3>
-          <p>Auroras occur when highly charged particles from the sun interact with the air molecules at the top of our atmosphere.</p>
-        </article>
-
-        <article class="gallery-card" data-category="halos" data-title="Best Halo I’ve ever seen." data-description="Best Halo I’ve ever seen. Cirucumpolar arc, full halo and sun dogs!">
-          <div class="image-placeholder"><span>Halo</span></div>
-          <h3>Best Halo I’ve ever seen.</h3>
-          <p>Best Halo I’ve ever seen. Cirucumpolar arc, full halo and sun dogs!</p>
-        </article>
-
-        <article class="gallery-card" data-category="thunderstorms" data-title="Thunderstorms" data-description="Thunderstorms">
-          <div class="image-placeholder"><span>Thunderstorms</span></div>
-          <h3>Thunderstorms</h3>
-        </article>
-
-        <article class="gallery-card" data-category="cumulus" data-title="Cumulus" data-description="Cumulus">
-          <div class="image-placeholder"><span>Cumulus</span></div>
-          <h3>Cumulus</h3>
-        </article>
-
-        <article class="gallery-card" data-category="cirrus" data-title="Cirrus" data-description="Cirrus">
-          <div class="image-placeholder"><span>Cirrus</span></div>
-          <h3>Cirrus</h3>
-        </article>
-      </div>
-    </section>
-
-    <section id="kids" class="section soft-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Web Weather For Kids</h2>
-      </div>
-
-      <div class="card-grid two">
-        <article class="text-card reveal">
-          <h3>Web Weather For Kids</h3>
-          <ul>
-            <li><a href="https://eo.ucar.edu/kids/" target="_blank">Kids’ Crossing:</a> Explore this weather funhouse. Lots of weather links, too.</li>
-            <li><a href="https://www.weather.gov/jetstream/" target="_blank">Jetstream</a> : Online weather school</li>
-            <li><a href="https://scijinks.jpl.nasa.gov/weather-lab/" target="_blank">SciJinks Weather Laboratory</a></li>
-            <li><a href="https://www.fi.edu/en/science-and-education/weather" target="_blank">Franklin’s Forecast</a></li>
-            <li><a href="https://www.metlink.org/" target="_blank">Royal Meteorological Society Education</a></li>
-            <li><a href="https://www.nrel.gov/" target="_blank">National Renewable Energy Laboratory</a></li>
-          </ul>
-        </article>
-
-        <article class="text-card reveal">
-          <h3>Weather Experiment Materials</h3>
-          <ul>
-            <li>The amazing wind bag – <a href="https://www.stevespanglerscience.com/" target="_blank">www.stevespanglerscience.com</a></li>
-            <li>Using Ice to Boil Water Lesson: contact craig.wolter@windom.k12.mn.us</li>
-          </ul>
-
-          <h3>Other Educational Sites</h3>
-          <ul>
-            <li>Coming soon</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="forecast" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Make your own weather forecast</h2>
-      </div>
-
-      <div class="feature-panel reveal">
-        <h3>Tips on how to make a simple weather forecast –</h3>
-        <a href="#">Weather Forecasting Tips Lis Cohen Download</a>
-      </div>
-
-      <div class="accordion reveal">
-        <button class="accordion-trigger">Overview:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.weather.gov/" target="_blank">National Weather Service Current Conditions</a></li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Station data:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://weather.uwyo.edu/" target="_blank">Atmospheric Science at the University of Wyoming</a> – Hourly observation reports by state or city, zone and state forecasts, text numerical model output, etc.</li>
-            <li><a href="https://vortex.plymouth.edu/" target="_blank">Plymouth State University</a> – Interactive map providing current observations.</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Radar:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.intellicast.com/" target="_blank">WSI Intellicast Weather</a> – National, regional, or local radar images, includes options for satellite images and local forecasts</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Satellite:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.ssec.wisc.edu/" target="_blank">Space Science and Engineering Center at the University of Wisconsin</a> – Views from the different geostationary satellites and composite images from multiple satellites</li>
-            <li><a href="https://www.cira.colostate.edu/" target="_blank">Colorado State’s RAMSDIS Page</a> – Visible, infrared, and water vapor satellite views and loops</li>
-          </ul>
-        </div>
-
-        <button class="accordion-trigger">Upper Air</button>
-        <div class="accordion-panel">
-          <ul>
-            <li>Soundings/Weather Baloons:
+        <section class="tab-panel" id="kids">
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Web Weather for Kids</h3>
               <ul>
-                <li><a href="https://weather.uwyo.edu/upperair/sounding.html" target="_blank">Univ. Wyoming</a> – Upper air soundings (Stuves) and text data</li>
-                <li><a href="https://weather.rap.ucar.edu/" target="_blank">National Center for Atmospheric Research</a> ‘s upper air page (Skew-T)</li>
+                <li>Kids’ Crossing: Explore this weather funhouse. Lots of weather links, too.</li>
+                <li>Jetstream: Online weather school</li>
+                <li>SciJinks Weather Laboratory</li>
+                <li>Franklin’s Forecast</li>
+                <li>Royal Meteorological Society Education</li>
+                <li>National Renewable Energy Laboratory</li>
               </ul>
-            </li>
-            <li>Maps:
+            </article>
+
+            <article class="resource-card">
+              <h3>Weather Experiment Materials</h3>
               <ul>
-                <li><a href="https://weather.uwyo.edu/upperair/uamap.shtml" target="_blank">Univ. Wyoming</a> – Constant pressure plots at mandatory levels.</li>
+                <li>The amazing wind bag</li>
+                <li>Using Ice to Boil Water Lesson</li>
               </ul>
-            </li>
-          </ul>
-        </div>
+            </article>
+          </div>
+        </section>
 
-        <button class="accordion-trigger">Hurricanes:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.nhc.noaa.gov/" target="_blank">National Hurricane Center / Tropical Prediction Center</a> – Current tropical storm/hurricane tracks (if any), forecasts, and historical data</li>
-          </ul>
-        </div>
+        <section class="tab-panel" id="climate">
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Climate in the News</h3>
+              <ul>
+                <li>Policy: Bipartisan lawmakers announce climate adaptation bill</li>
+                <li>Business: Severe climate risk threatens global fossil reserves</li>
+                <li>Global Impacts: Human-induced climate change impacts</li>
+                <li>Health: Climate change and air quality</li>
+              </ul>
+            </article>
 
-        <button class="accordion-trigger">Tornadoes:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://www.spc.noaa.gov/" target="_blank">Storm Prediction Center</a> – Tornado and severe thunderstorm outlook, statistics, and historical archive</li>
-          </ul>
-        </div>
+            <article class="resource-card">
+              <h3>Weather/Climate Vulnerability and Equity</h3>
+              <p>
+                Resources about climate and justice, social vulnerability,
+                disasters, older adults, income, heat, and disproportionate climate impacts.
+              </p>
+            </article>
+          </div>
+        </section>
 
-        <button class="accordion-trigger">Model Forecasts:</button>
-        <div class="accordion-panel">
-          <ul>
-            <li><a href="https://mag.ncep.noaa.gov/" target="_blank">NCEP Model Output page</a> – current model fields as generated</li>
-            <li><a href="https://weather.rap.ucar.edu/" target="_blank">NCAR Numerical Model page</a> – Extensive suite of models for forecasts from 12 hours to 10 days</li>
-          </ul>
-        </div>
-      </div>
+        <section class="tab-panel" id="tools">
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Climate Impacts Data and Tools</h3>
+              <ul>
+                <li>FEMA National Risk Index</li>
+                <li>National Risk Index FEMA Technical Documentation</li>
+                <li>Sea Level Rise Viewer — NOAA</li>
+                <li>Tribal Climate Tool</li>
+                <li>Health and Vulnerability Tool</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-      <div class="info-panel reveal">
-        <h3>International Forecasts</h3>
-        <ul>
-          <li>Coming soon!</li>
-        </ul>
+        <section class="tab-panel" id="forecasting">
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Make Your Own Weather Forecast</h3>
+              <p>
+                Tips on how to make a simple weather forecast using current
+                conditions, station data, radar, satellite imagery, upper-air data,
+                hurricane resources, tornado resources, and model forecasts.
+              </p>
+            </article>
+
+            <article class="resource-card">
+              <h3>Forecasting Categories</h3>
+              <ul>
+                <li>Overview</li>
+                <li>Station Data</li>
+                <li>Radar</li>
+                <li>Satellite</li>
+                <li>Upper Air and Weather Balloons</li>
+                <li>Hurricanes</li>
+                <li>Tornadoes</li>
+                <li>Model Forecasts</li>
+              </ul>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
 
-    <section id="comedy" class="section soft-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Weather Comedy</h2>
-      </div>
-
-      <div class="card-grid two">
-        <article class="text-card reveal">
-          <p class="card-label">March 3, 2020 March 3, 2020</p>
-          <h3>Stratus Cloud Bit – Comedy</h3>
-          <p>Lis’ stand-up comedy routine – Denver, February 27, 2020.</p>
-          <a href="https://youtu.be/" target="_blank">Youtube Stratus Comedy Link</a>
-        </article>
-
-        <article class="text-card reveal">
-          <p class="card-label">February 20, 2020 March 3, 2020</p>
-          <h3>Comedy – 8 Reasons I do not tell strangers that I am a meteorologist</h3>
-          <p>8. I don’t have the heart to tell someone that I don’t study meteors. 7. People will ask me if you’ve ever meteorologized on tv. 6. I can’t do the “a cold front is sweeping …</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>About</h2>
-      </div>
-
+    <section id="about" class="section about-section">
       <div class="about-layout">
-        <div class="about-image image-placeholder reveal">
-          <span>Image</span>
+        <div class="about-image placeholder reveal">
+          <span>Lis Cohen</span>
         </div>
 
         <div class="about-copy reveal">
-          <p>Elisabeth (Lis) Cohen is Senior Program Manager at the Talking Climate Collaborative, where she brings more than two decades of experience spanning climate science, policy, education, communications, and government leadership. Prior to joining the Talking Climate Collaborative, Lis served as Adaptation and Resilience Manager for the City and County of Denver, helping advance climate resilience planning and implementation.</p>
+          <p class="eyebrow">About</p>
+          <h2>Lis Cohen, MS, MPA</h2>
 
-          <p>Earlier in her career, she worked as a scientist at the University Corporation for Atmospheric Research (UCAR) COMET Program and as Science Communications Manager at the National Oceanic and Atmospheric Administration (NOAA/CNT) in Boulder, Colorado. From 2012–2014, she served as Education and Training Specialist for the National Park Service Climate Change Response Program.</p>
+          <p>
+            Elisabeth (Lis) Cohen is Senior Program Manager at the Talking Climate
+            Collaborative, where she brings more than two decades of experience
+            spanning climate science, policy, education, communications, and
+            government leadership.
+          </p>
 
-          <p>Lis has built her career translating climate science into practical action and accessible communication. She holds a Master in Public Affairs from Princeton University with a focus on climate and environmental policy. During graduate school, she worked on the climate adaptation team at the White House Council on Environmental Quality, helping support federal climate resilience efforts.</p>
+          <p>
+            Prior to joining the Talking Climate Collaborative, Lis served as
+            Adaptation and Resilience Manager for the City and County of Denver,
+            helping advance climate resilience planning and implementation.
+          </p>
 
-          <p>Before Princeton, Lis taught at the University of Utah and worked in the Utah Governor’s Office on energy and climate policy. She also earned a master’s degree in meteorology from the University of Utah, where her research examined the effects of clouds on climate.</p>
+          <p>
+            Earlier in her career, she worked as a scientist at the University
+            Corporation for Atmospheric Research COMET Program and as Science
+            Communications Manager at the National Oceanic and Atmospheric
+            Administration in Boulder, Colorado.
+          </p>
 
-          <p>Her early career blended science, education, and public engagement. Lis worked as a science educator, presenter, and exhibit planner at the Museum of Science in Boston, the Franklin Institute, the Blue Hill Weather Observatory, and Yellowstone National Park. She also contributed to climate journalism as a reporter for Climate Central and wrote the monthly Satellite Educator’s Newsletter column.</p>
+          <div class="collapsible" id="bioMore">
+            <p>
+              From 2012–2014, she served as Education and Training Specialist for
+              the National Park Service Climate Change Response Program.
+            </p>
 
-          <p>Lis earned her bachelor’s degree from Cornell University, where she double majored in Atmospheric Science and Science of Earth Systems with a concentration in Climate Dynamics. While at Cornell, she worked on the Mars Exploration Rover mission and helped teach the public about its scientific discoveries.</p>
+            <p>
+              Lis has built her career translating climate science into practical
+              action and accessible communication. She holds a Master in Public
+              Affairs from Princeton University with a focus on climate and
+              environmental policy.
+            </p>
 
-          <p>Throughout her career, Lis has served as a bridge between climate science, policy, and public understanding—helping diverse audiences navigate complex climate issues and translate knowledge into meaningful action.</p>
+            <p>
+              Before Princeton, Lis taught at the University of Utah and worked in
+              the Utah Governor’s Office on energy and climate policy. She also
+              earned a master’s degree in meteorology from the University of Utah,
+              where her research examined the effects of clouds on climate.
+            </p>
 
-          <h3>Contact me</h3>
-          <div class="social-row">
-            <a href="#">WordPress</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">YouTube</a>
+            <p>
+              Throughout her career, Lis has served as a bridge between climate
+              science, policy, and public understanding — helping diverse audiences
+              navigate complex climate issues and translate knowledge into
+              meaningful action.
+            </p>
           </div>
+
+          <button class="text-button" id="bioToggle">Read full bio</button>
         </div>
+      </div>
+    </section>
+
+    <section id="comedy" class="section comedy-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Creative Communication</p>
+        <h2>Weather Comedy</h2>
+        <p>
+          Science communication can be educational, clear, and funny. Weather
+          Outreach also includes comedy connected to meteorology and public
+          understanding of weather.
+        </p>
+      </div>
+
+      <div class="feature-grid two">
+        <article class="feature-card reveal">
+          <span class="card-icon">🎤</span>
+          <h3>Stratus Cloud Bit</h3>
+          <p>Lis’ stand-up comedy routine — Denver, February 27, 2020.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="card-icon">☔</span>
+          <h3>8 Reasons I Do Not Tell Strangers That I Am a Meteorologist</h3>
+          <p>
+            A comedy piece about what happens when people hear the word meteorologist.
+          </p>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Weather Outreach</p>
-        <h2>Contact Me</h2>
-      </div>
-
       <div class="contact-card reveal">
         <div>
-          <h3>Questions or comments</h3>
-          <p>Let’s chat!</p>
+          <p class="eyebrow">Contact</p>
+          <h2>Questions or comments?</h2>
+          <p>
+            Contact Lis Cohen for weather outreach, climate communication,
+            educational resources, and photo permission.
+          </p>
 
-          <div class="social-row">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-          </div>
+          <a class="email-link" href="mailto:weatheroutreach@gmail.com">
+            weatheroutreach@gmail.com
+          </a>
         </div>
 
         <form class="contact-form" id="contactForm">
           <label>
-            Name(required)
-            <input type="text" required />
+            Name
+            <input type="text" name="name" required />
           </label>
 
           <label>
-            Email(required)
-            <input type="email" required />
+            Email
+            <input type="email" name="email" required />
           </label>
 
           <label>
             Message
-            <textarea rows="5"></textarea>
+            <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <button class="button primary" type="submit">Submit</button>
-          <p class="form-response" id="formResponse">Thank you for your response. ✨</p>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-message" id="formMessage">
+            Thank you. Your message is ready to send.
+          </p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>Contact: Lis Cohen at <a href="mailto:weatheroutreach@gmail.com">weatheroutreach@gmail.com</a></p>
-    <div class="social-row">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
-      <a href="#">Pinterest</a>
-      <a href="#">LinkedIn</a>
-    </div>
+  <footer class="footer">
+    <p>Weather Outreach — Teaching our community</p>
+    <p>
+      Contact:
+      <a href="mailto:weatheroutreach@gmail.com">weatheroutreach@gmail.com</a>
+    </p>
   </footer>
-
-  <div class="modal" id="imageModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-card">
-      <button class="modal-close" data-close-modal aria-label="Close image preview">×</button>
-      <div class="modal-image image-placeholder">
-        <span id="modalImageLabel">Image</span>
-      </div>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
